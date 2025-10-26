@@ -41,3 +41,8 @@ setupQuoteButton(newQuoteButton, displayQuote)
 // We already have a static quote in HTML, so we don't call displayQuote() on load
 // If you wanted a random one on load, you'd uncomment the next line:
 // document.addEventListener('DOMContentLoaded', displayQuote);
+
+
+// Extra Quotes 1
+// Extra quotes 2
+// Extra quotes 3
