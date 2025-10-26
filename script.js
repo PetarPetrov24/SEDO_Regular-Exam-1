@@ -26,11 +26,15 @@ function displayQuote() {
 
 // --- Event Listeners ---
 // Display a random quote when the button is clicked
-if (newQuoteButton) { // Check if button exists before adding listener
-    newQuoteButton.addEventListener('click', displayQuote);
-} else {
-    console.error("Button with ID 'new-quote-btn' not found.");
+function setupQuoteButton(button, callback) {
+    if (button) {
+        button.addEventListener('click', callback);
+    } else {
+        console.error("Button with ID 'new-quote-btn' not found.")
+    }
 }
+
+setupQuoteButton(newQuoteButton, displayQuote)
 
 // --- Initial Load ---
 // Display a random quote on initial page load (optional, could be first quote)
